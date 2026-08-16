@@ -9,7 +9,7 @@ module.exports = {
     // Caminho absoluto para o diretório de saída
     path: path.resolve(__dirname, "dist"),
     // Nome do arquivo de saída
-    filaname: "bundle.js",
+    filename: "bundle.js",
   },
   // Configurações do módulo
   module: {
@@ -21,7 +21,7 @@ module.exports = {
         exclude: /node_modules/,
         // Usar o loader 'babel-loader' para transpilar os arquivos
         use: {
-          loader: "babel-loader",
+          loader: "babel-loader"
         },
       },
     ],
@@ -31,7 +31,7 @@ module.exports = {
     // Plugin para gerar automaticamente o arquivo HTML
     new HtmlWebpackPlugin({
         // Template HTML para ser usado
-        template: ".public/index.html"
+        template: "public/index.html"
     })
   ],
   // Configurações da resolução de módulos
